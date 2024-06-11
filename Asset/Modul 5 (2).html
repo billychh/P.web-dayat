@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perpustakaan Halak Lubis</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    /> 
+	<style>
+		/* CSS untuk styling gambar */
+		img {
+			min-height: 130vh;
+		  width: 240px;
+		  height: 300px;
+		  border: 4px solid black;
+		  padding: 3px;
+		}
+	  </style>
+  </head>
+
+  <body>
+    <!-- navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Perpustakaan Halak Lubis</a>
+
+      <div class="navbar-nav">
+        <a href="index.html">Beranda</a>
+        
+        <div class="nav-item-with-dropdown">
+          <a href="#koleksi">Koleksi 
+            <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="Modul 1 No 2.html">Modul 1 (Audio)</a></li>
+            <li><a href="Modul 5 (2).html">peminjaman Koleksi (modul 5)</a></li>
+            <li><a href="modul5 (3).html">Daftar Koleksi (Modul 5)</a></li>
+            <li><a href="modul 6.html"> Opac (Modul 6)</a></li>
+          </ul>
+        </div>
+        
+        <div class="nav-item-with-dropdown">
+          <a href="#layanan">Layanan
+            <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="modul 2 No 1.html">Modul 2 (Keanggotaan)</a></li>
+            <li><a href="Modul 2 No 2.html">Modul 3 (Form masa pinjam)</a></li>
+            <li><a href="MODUL 1.html">Modul 4 (Daftar Perpustakaan)</a></li>
+            <li><a href="Modul 7.1.html">Modul 7 (Kalkulator)</a></li>
+            <li><a href="Modul 7.html">Modul 7 (Login)</a></li>
+          </ul>
+        </div>
+        
+        <div class="links">
+          <a href="#TentangKami">Tentang Kami</a>
+          <a href="#Kontak">Kontak</a>
+        </div>
+
+      <div class="navbar-extra">
+        <a href="Modul 6.html" id="search"><i data-feather="search"></i></a>
+        <a href="Modul5 (3).html" id="book"><i data-feather="book"></i></a>
+        <a href="#" id="menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+	<script>
+		// Mendefinisikan variabel
+		var buku = ["Cantik Itu Luka", "The Lord of the Rings", "Pride and Prejudice", "Perahu Kertas", "Bumi Tere Liye"];
+		var pilihan = prompt("Silahkan pilih buku yang ingin Anda baca: \n1. Cantik Itu Luka \n2. The Lord of the Rings \n3. Pride and Prejudice \n4. Perahu Kertas \n5. Bumi Tere Liye");
+
+		// Struktur kondisi
+		if (pilihan == 1) {
+			document.write("<p>Anda memilih buku Cantik Itu Luka.</p>");
+			document.write("<p>Cantik Itu Luka adalah sebuah seri novel fantasi yang ditulis oleh penulis Kebangsaan Indonesia Eka Kurniawan. Buku ini memadukan unsur keluarga, romansa, dan politik, yang telah menembus berbagai negara hingga diterjemahkan ke lebih dari 34 bahasa. Menceritakan tentang kehidupan Dewi Ayu, karya sastra ini juga berhasil memenangkan World Readers' Award pada tahun 2016.Kisah dalam buku ini diawali oleh seorang perempuan yang bangkit dari kuburannya setelah dua puluh satu tahun kematiannya. Kebangkitannya ini menguak kutukan dan tragedi keluarga yang menimpanya di akhir masa kolonial.Perpaduan yang epik, dari kisah kekasih yang lenyap ditelan kabut, hingga ada seorang ibu yang menginginkan bayi buruk rupa karena baginya kecantikan hanyalah sebuah luka..</p>");
+		} else if (pilihan == 2) {
+			document.write("<p>Anda memilih buku The Lord of the Rings.</p>");
+			document.write("<p>The Lord of the Rings adalah sebuah novel epik fantasi karya penulis Inggris J.R.R. Tolkien. Cerita berfokus pada perjalanan Frodo Baggins, hobbit kecil yang ditugaskan untuk membawa cincin kekuasaan yang sangat berbahaya ke gunung tempat ia dapat dihancurkan. Cincin tersebut awalnya dimiliki oleh Sauron, sang penakluk dan penguasa jahat dari Mordor, yang menggunakan kekuatan cincin untuk memerintah dan menguasai seluruh wilayah. Berbagai karakter dan makhluk fantastis ikut terlibat dalam perjalanan Frodo, baik sebagai sekutu maupun sebagai musuh, termasuk Gandalf si penyihir, Aragorn sang pewaris kerajaan, Legolas sang elf, Gimli si kurcaci, serta Boromir dan Faramir dari Gondor. Selama perjalanan, Frodo dan teman-temannya dihadapkan dengan berbagai rintangan dan musuh yang bertujuan untuk merebut cincin tersebut. Perjalanan mereka melintasi berbagai tempat, termasuk dataran, gunung, hutan, dan sungai. Akhirnya, setelah melewati berbagai ujian dan pengorbanan, Frodo berhasil sampai ke Mordor dan menghancurkan cincin tersebut, sehingga Sauron dapat dihancurkan dan wilayah-wilayah yang dikuasainya dapat bebas..</p>");
+		} else if (pilihan == 3) {
+			document.write("<p>Anda memilih buku Pride and Prejudice.</p>");
+			document.write("<p>Pride and Prejudice adalah sebuah novel klasik yang ditulis oleh Jane Austen pada abad ke-18. Ceritanya berkisah tentang kehidupan keluarga Bennet, khususnya putri kedua mereka yang bernama Elizabeth. Elizabeth adalah seorang wanita yang pintar dan cerdas, namun terkadang pemarah dan terlalu cepat menilai orang lain. Ia bertemu dengan Mr. Darcy, seorang pria yang terlihat sombong dan menyebalkan pada awalnya, namun lambat laun Elizabeth mengetahui bahwa ia sebenarnya memiliki sifat yang baik. Ketika Elizabeth menolak lamaran Mr. Darcy, ia memulai sebuah konflik dengan keluarga Darcy dan hal ini semakin rumit ketika adik Elizabeth yang lain terlibat dengan salah satu sahabat Mr. Darcy. Meskipun awalnya saling membenci dan merendahkan satu sama lain, akhirnya Elizabeth dan Mr. Darcy saling jatuh cinta dan memutuskan untuk menikah. Novel ini juga mengeksplorasi tema-tema sosial dan kelas, seperti pentingnya pernikahan dan keluarga dalam masyarakat kelas menengah Inggris.</p>");
+		} else if (pilihan == 4) {
+			document.write("<p>Anda memilih buku Perahu Kertas.</p>");
+			document.write("<p>Perahu Kertas adalah sebuah novel romansa remaja yang ditulis oleh Dewi Lestari dan diterbitkan oleh Bentang Pustaka pada tahun 2009.Novel Perahu Kertas bertemakan persahabatan, percintaan, dan idealisme seseorang. Kisah ini berawal dengan seorang remaja laki-laki yang baru saja lulus dari Sekolah Menengah Akhir (SMA) bernama Keenan. Ia adalah laki-laki yang cerdas, mempunyai minat dan bakat dalam bidang seni melukis sangat kuat.</p>");
+		} else if (pilihan == 5) {
+			document.write("<p>Anda memilih buku The Bumi Tere Liye.</p>");
+			document.write("<p>Bumi adalah sebuah novel karya Tere Liye. Novel ini merupakan buku pertama dari serial Bumi atau Dunia Paralel dan diterbitkan pertama kali oleh Gramedia Pustaka Utama tahun 2014. Bumi Tere Liye menceritakan petualangan tiga remaja berusia 15 tahun bernama Raib, Ali, dan Seli. Mereka digambarkan sebagai remaja dengan kekuatan khusus.</p>");
+		} else {
+			document.write("<p>Pilihan Anda tidak valid.</p>");
+		}
+
+		// Struktur perulangan
+		document.write("<p>Berikut adalah daftar buku yang tersedia di websitePerpustakaan Halak Lubis:</p>");
+		document.write("<ul>");
+		for (i = 0; i < buku.length; i++) {
+			document.write("<li>" + buku[i] + "</li>");
+		}
+		document.write("</ul>");
+		
+
+		// Operator
+		var denda = 1000;
+		var hariTerlambat = prompt("Berapa hari terlambat mengembalikan buku?");
+		var totalDenda = denda * hariTerlambat;
+		document.write("<p>Total denda yang harus Anda bayar adalah: Rp. " + totalDenda + "</p>");
+	</script>
+	<!-- kontak kami start -->
+
+    <section id="Kontak" class="Kontak">
+		<h2>Kontak Kami</h2>
+		<p>
+		  Email : hidayatulanwar123@gmai.com
+		</p>
+		<p>Whatsapp : 0895392476255</p>
+		<p>Instagram : @hii_dytlbs</p>
+  
+		<div class="row">
+		  <iframe
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.121372426695!2d98.65464837248531!3d3.559509750498249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3031304bd6005d07%3A0x8e0e5e2d03fa7983!2sUniversity%20of%20Sumatera%20Utara%20Library!5e0!3m2!1sen!2sid!4v1714321284971!5m2!1sen!2sid"
+			allowfullscreen=""
+			loading="lazy"
+			referrerpolicy="no-referrer-when-downgrade"
+			class="map"
+		  ></iframe>
+  
+		  <form action="">
+			<div class="input-group">
+			  <i data-feather="user"></i>
+			  <input type="text" placeholder="nama" />
+			</div>
+			<div class="input-group">
+			  <i data-feather="mail"></i>
+			  <input type="text" placeholder="email" />
+			</div>
+			<div class="input-group">
+			  <i data-feather="phone"></i>
+			  <input type="text" placeholder="no hp" />
+			</div>
+			<button type="submit" class="btn">kirim pesan</button>
+		  </form>
+		</div>
+	  </section>
+  
+	  <!-- kontak kami end -->
+  
+	  <!-- footer start -->
+	  <footer>
+		<div class="sosials">
+		  <a href="#"><i data-feather="instagram"></i></a>
+		  <a href="#"><i data-feather="twitter"></i></a>
+		  <a href="#"><i data-feather="facebook"></i></a>
+		</div>
+  
+		<div class="links">
+		  <a href="#Beranda">Beranda</a>
+		  <a href="#Koleksi ">Koleksi</a>
+		  <a href="#layanan">Layanan</a>
+		  <a href="#TentangKami">Tentang Kami</a>
+		  <a href="#Kontak">Kontak</a>
+		</div>
+  
+		<div class="credit">
+		  <p>Created by ="H.A.L"</H></a>. | &copy; 2024.</p>
+		</div>
+	  </footer>
+	  <!-- footer end -->
+	  <footer></footer>
+	  <!-- Feather Icon -->
+  
+	  <script>
+		feather.replace();
+	  </script>
+  
+	  <!-- My Javascript -->
+	  <script src="js/script.js"></script>
+	</body>
+  </html>
+  

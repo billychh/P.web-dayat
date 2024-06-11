@@ -1,0 +1,506 @@
+:root {
+  --primary: #121212;
+  --bg: #1c1c1c;
+  --highlight: #ff4081;
+  --navbar-bg: #1f1f1f;
+  --navbar-text: #e0e0e0;
+  --text-color: #e0e0e0;
+  --hover-color: #ff80ab;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: var(--text-color);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: var(--navbar-bg);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.navbar .navbar-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--highlight);
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  height: 2em;
+  margin-right: 1rem;
+}
+
+.navbar .navbar-logo span {
+  color: var(--highlight);
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-nav a {
+  color: var(--navbar-text);
+  font-weight: 600;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav a:hover {
+  color: var(--hover-color);
+}
+
+.nav-item-with-dropdown {
+  position: relative;
+}
+
+.nav-item-with-dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--navbar-bg);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  border-radius: 0.5rem;
+}
+
+.nav-item-with-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu a {
+  color: var(--navbar-text);
+  padding: 0.5rem 1rem;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+  background-color: var(--hover-color);
+}
+
+.navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--highlight);
+  transform: scaleX(0);
+  transition: transform 0.2s linear;
+}
+
+.navbar-nav a:hover::after {
+  transform: scaleX(1);
+}
+
+/* Hero Section */
+.hero {
+  min-height: 130vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.hero h1 {
+  font-size: 4rem;
+  color: var(--text-color);
+}
+
+.hero h1 span {
+  color: var(--highlight);
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 1rem auto;
+  line-height: 1.6;
+}
+
+.hero .main_btn {
+  background: var(--highlight);
+  padding: 5px 0px;
+  color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  transition: background 0.3s ease;
+}
+
+.hero .main_btn:hover {
+  background: var(--hover-color);
+}
+
+/* About Section */
+.TentangKami {
+  padding: 7rem 7% 1.4rem;
+  text-align: center;
+}
+
+.TentangKami h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: var(--highlight);
+}
+
+.TentangKami .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.TentangKami .TentangKami-img {
+  flex: 1 1 35rem;
+  max-width: 35rem;
+  margin: 1rem;
+}
+
+.TentangKami .TentangKami-img img {
+  width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.TentangKami .content {
+  flex: 1 1 35rem;
+  max-width: 35rem;
+  padding: 0 1rem;
+  text-align: left;
+}
+
+.TentangKami .content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.TentangKami .content p {
+  margin-bottom: 0.8rem;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Contact Section */
+.Kontak {
+  padding: 7rem 7% 1.4rem;
+  text-align: center;
+}
+
+.Kontak h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: var(--highlight);
+}
+
+.Kontak p {
+  max-width: 30rem;
+  margin: auto;
+  font-weight: 200;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.Kontak .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.Kontak .map {
+  flex: 1 1 55rem;
+  max-width: 55rem;
+  height: 300px;
+  background-color: #000;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin: 1rem;
+}
+
+.Kontak form {
+  flex: 1 1 30rem;
+  max-width: 30rem;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #333;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.Kontak .input-group {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  background-color: #444;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.Kontak .input-group i {
+  padding: 1rem;
+  background-color: var(--highlight);
+  color: #fff;
+}
+
+.Kontak .input-group input {
+  flex: 1;
+  padding: 1rem;
+  background-color: #444;
+  border: none;
+  color: #fff;
+}
+
+.Kontak .btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: var(--highlight);
+  color: #fff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.Kontak .btn:hover {
+  background-color: var(--hover-color);
+}
+
+/* Featured Books */
+.featured_books {
+  width: 100%;
+  padding: 70px 0;
+  text-align: center;
+}
+
+.featured_books h1 {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: var(--highlight);
+}
+
+.featured_books .featured_book_box {
+  display: flex;
+  overflow-x: scroll;
+  padding: 20px 0;
+}
+
+.featured_books .featured_book_card {
+  min-width: 250px;
+  margin: 0 10px;
+  padding: 15px;
+  background: #2c2c2c;
+  border: 1px solid #333;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s ease;
+}
+
+.featured_books .featured_book_card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+}
+
+.featured_books .featured_book_card img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.featured_books .featured_book_card .book_info {
+  padding: 10px 0;
+}
+
+.featured_books .featured_book_card .book_info h4 {
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.featured_books .featured_book_card .book_info .author {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  color: var(--highlight);
+}
+
+.featured_books .featured_book_card .book_info .publisher {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  color: var(--text-color);
+}
+
+.featured_books .featured_book_card .book_info .isbn {
+  font-weight: bold;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.featured_books .featured_book_card .book_info .btn {
+  padding: 8px 20px;
+  background: var(--highlight);
+  color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  transition: background 0.3s ease;
+}
+
+.featured_books .featured_book_card .book_info .btn:hover {
+  background: var(--hover-color);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--highlight);
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: var(--navbar-bg);
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer .sosials {
+  padding: 1rem 0;
+}
+
+footer .sosials a {
+  color: var(--highlight);
+  margin: 0 1rem;
+  transition: color 0.3s ease;
+}
+
+footer .sosials a:hover {
+  color: var(--hover-color);
+}
+
+footer .links {
+  margin-bottom: 1.4rem;
+}
+
+footer .links a {
+  color: var(--highlight);
+  padding: 0.7rem 1rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+footer .links a:hover {
+  color: var(--hover-color);
+}
+
+footer .credit {
+  font-size: 1rem;
+}
+
+footer .credit a {
+  color: var(--highlight);
+  font-weight: 700;
+}
+
+/* Media Queries */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 62%;
+  }
+
+  #menu {
+    display: inline-block;
+  }
+
+  .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: right 0.3s ease;
+  }
+
+  .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar-nav a {
+    color: var(--navbar-text);
+    display: block;
+    margin: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  .navbar-nav a:hover::after {
+    transform: scaleX(0.3);
+  }
+
+  .dropdown-menu {
+    position: static;
+    display: block;
+  }
+
+  .dropdown-menu a {
+    padding: 1rem 0;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .Kontak .row {
+    flex-direction: column;
+  }
+}

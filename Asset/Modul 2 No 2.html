@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perpustakaan Halak Lubis</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <style>
+      /* CSS untuk styling gambar */
+      img {
+        width: 240px;
+        height: 300px;
+        border: 1px solid black;
+        padding: 3px;
+      }
+    </style>
+</head>
+
+<body>
+	<body>
+	  <!-- navbar start -->
+	  <nav class="navbar">
+		<a href="#" class="navbar-logo">Perpustakaan Halak Lubis</a>
+  
+		<div class="navbar-nav">
+		  <a href="index.html">Beranda</a>
+		  
+		  <div class="navbar-nav">
+        <a href="index.html">Beranda</a>
+        
+        <div class="nav-item-with-dropdown">
+          <a href="#koleksi">Koleksi 
+            <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="Modul 1 No 2.html">Modul 1 (Audio)</a></li>
+            <li><a href="Modul 5 (2).html">peminjaman Koleksi (modul 5)</a></li>
+            <li><a href="modul5 (3).html">Daftar Koleksi (Modul 5)</a></li>
+            <li><a href="modul 6.html"> Opac (Modul 6)</a></li>
+          </ul>
+        </div>
+        
+        <div class="nav-item-with-dropdown">
+          <a href="#layanan">Layanan
+            <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="modul 2 No 1.html">Modul 2 (Keanggotaan)</a></li>
+            <li><a href="Modul 2 No 2.html">Modul 3 (Form masa pinjam)</a></li>
+            <li><a href="MODUL 1.html">Modul 4 (Daftar Perpustakaan)</a></li>
+            <li><a href="Modul 7.1.html">Modul 7 (Kalkulator)</a></li>
+            <li><a href="Modul 7.html">Modul 7 (Login)</a></li>
+          </ul>
+        </div>
+		  
+		  <div class="links">
+			<a href="#TentangKami">Tentang Kami</a>
+			<a href="#Kontak">Kontak</a>
+		  </div>
+  
+		<div class="navbar-extra">
+		  <a href="Modul 6.html" id="search"><i data-feather="search"></i></a>
+		  <a href="Modul5 (3).html" id="book"><i data-feather="book"></i></a>
+		  <a href="#" id="menu"><i data-feather="menu"></i></a>
+		</div>
+	  </nav>
+	  <!-- navbar end -->
+  
+	  <!-- Hero Section Start -->
+	  <section class="hero" id="Beranda">
+		<div class="main">
+		  <div class="main_tag">
+			<h1>Formulir Masa Pinjam <br /><span>Perpustakaan Halak Lubis</span></h1>
+  
+			<p>
+			  Berikut adalah Nama Formullir Masa Pinjam yang dimiliki oleh Perpustakaan Halak Lubis, dimana Formulir tersebut menjelaskan Pengajuan MAsa Pinjam Buku Beserta Pemesanan Buku
+			</p> 
+		</div>
+	  </section>
+	  <!-- Hero Section End -->
+
+<h2 align="center">  Form Perpanjangan Masa Pinjam </h2>
+	<p> Pengajuan Perpanjangan Masa Pinjam Buku secara online hanya akan dilayani apabila dilakukan pada hari dan jam kerja (Senin s.d Jumat pukul 08.00-15.30), peminjaman belum melebihi tenggat waktu pengembalian, serta hanya dapat dilakukan satu kali di setiap peminjaman untuk buku yang sama. </p>
+	
+	 <form action="contact.php" method="POST">
+        <fieldset>
+        <p>
+            <label> Member ID :</label>
+            <input type="text" name="name"/>
+        </p>
+		<p>
+            <label> Kode Eksemplar :</label>
+            <input type="text" name="name"/>
+        </p>
+		<p>
+            <input type="submit" name="submit" value="Submit" />
+        </p>
+		 </fieldset>
+</body>
+
+
+<head>
+	<h2 align="center"> Form Pemesanan buku</h2>
+</form action="contatct.php" method="POST">
+<fieldset>
+<legend> </legend>
+<p>
+	<label> Nama Customer : </label>
+	<input type="text" name="name"/>
+</p>
+<p>
+	<label> Tanggal Pemesanan : </label>
+	<input type="date" name="tanggal"/>
+</p>
+<p>
+	<label> Alamat : </legend>
+	<input type="text" name="name"/>
+</p>
+<p>
+	<label> Judul Buku : </label>
+	<input type="text" name="name"/>
+</p>
+<p>
+	<label> Pengarang : </label>
+	<input type="text" name="name"/>
+</p>
+<p>
+	<label> Jumlah Buku : </label>
+	<input type="text" name="name"/>
+</p>
+<p>
+
+	<input type ="submit" name="submit" value="Send"/>
+</p>
+</fieldset>
+</form>
+
+
+</head>
+</body>
+
+
+
+<h2 align="center">Tabel koleksi Buku</h2>
+<table border="1">
+<tr>
+	<td style="text-align:center"> <b> Judul </b> </td>
+	<td style="text-align:center"> <b> No. Akses </b> </td>
+	<td style="text-align:center"> <b> No. Panggil </b> </td>
+	<td style="text-align:center"> <b> Pengarang </b> </td>
+	<td style="text-align:center"> <b> Subjek </b> </td>
+	<td style="text-align:center"> <b> Nama Penerbit </b> </td>
+	<td style="text-align:center"> <b> Tahun Terbit </b> </td> 
+</tr>
+
+<tr>
+	<td> Pengantar Ilmu Perpustakaan </td>
+	<td> 17002470 </td>
+	<td> 020 Sul p </td>
+	<td> Sulistyo Basuki </td>
+	<td> Library Science </td>
+	<td> Gramedia Press </td>
+	<td> 1991 </td>
+</tr>
+
+	<td> Filsafat ilmu pengetahuan : filsafat, ilmu pengetahuan, dan peradaban </td>
+	<td> 00002749304 </td>
+	<td> 121 JAL f</td>
+	<td> Prof. Dr. H. Jalaluddin</td>
+	<td> Pengetahuan, Teori</td>
+	<td> Rajawali Pers </td>
+	<td> 2019 </td>
+</tr>
+	<td> Analisis dan perancangan sistem informasi </td>
+	<td> 19006640 </td>
+	<td> 658.403 8 Nug a </td>
+	<td> Adi Sulistyo Nugroho </td>
+	<td> Management Information Systems </td>
+	<td> Trans Tekno </td>
+	<td> 2017</td>
+</tr>
+</table>
+<!-- kontak kami start -->
+
+    <section id="Kontak" class="Kontak">
+      <h2>Kontak Kami</h2>
+      <p>
+        Email : hidayatulanwar123@gmai.com
+      </p>
+      <p>Whatsapp : 0895392476255</p>
+      <p>Instagram : @hii_dytlbs</p>
+
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.121372426695!2d98.65464837248531!3d3.559509750498249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3031304bd6005d07%3A0x8e0e5e2d03fa7983!2sUniversity%20of%20Sumatera%20Utara%20Library!5e0!3m2!1sen!2sid!4v1714321284971!5m2!1sen!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+        ></iframe>
+
+        <form action="">
+          <div class="input-group">
+            <i data-feather="user"></i>
+            <input type="text" placeholder="nama" />
+          </div>
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input type="text" placeholder="email" />
+          </div>
+          <div class="input-group">
+            <i data-feather="phone"></i>
+            <input type="text" placeholder="no hp" />
+          </div>
+          <button type="submit" class="btn">kirim pesan</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- kontak kami end -->
+
+    <!-- footer start -->
+    <footer>
+      <div class="sosials">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+      </div>
+
+      <div class="links">
+        <a href="#Beranda">Beranda</a>
+        <a href="#Koleksi ">Koleksi</a>
+        <a href="#layanan">Layanan</a>
+        <a href="#TentangKami">Tentang Kami</a>
+        <a href="#Kontak">Kontak</a>
+      </div>
+
+      <div class="credit">
+        <p>Created by ="H.A.L"</H></a>. | &copy; 2024.</p>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <footer></footer>
+    <!-- Feather Icon -->
+
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- My Javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
+

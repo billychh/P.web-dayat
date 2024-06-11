@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manajemen Data</title>
+    <link rel="stylesheet" href="css modul 8.css">
+</head>
+<body>
+    <h1>Manajemen Data</h1>
+    <table id="data-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nama</th>
+                <th>Umur</th>
+                <th>Kota</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data akan dimuat di sini -->
+        </tbody>
+    </table>
+    <h2>Tambah / Ubah Data</h2>
+    <form id="data-form">
+        <input type="hidden" id="id" name="id">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <label for="age">Umur:</label>
+        <input type="number" id="age" name="age" required>
+        <br><br>
+        <label for="city">Kota:</label>
+        <input type="text" id="city" name="city" required>
+        <br><br>
+        <button type="submit">Simpan</button>
+    </form>
+
+    <script src="Js Modul 8.js"></script>
+</body>
+</html>

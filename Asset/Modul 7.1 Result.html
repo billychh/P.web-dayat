@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Perhitungan</title>
+</head>
+<body>
+    <h1>Hasil Perhitungan</h1>
+    <p id="result"></p>
+
+    <script>
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        const number1 = parseFloat(getQueryParam('number1'));
+        const number2 = parseFloat(getQueryParam('number2'));
+        const operation = getQueryParam('operation');
+
+        let result;
+        switch (operation) {
+            case 'add':
+                result = number1 + number2;
+                break;
+            case 'subtract':
+                result = number1 - number2;
+                break;
+            case 'multiply':
+                result = number1 * number2;
+                break;
+            case 'divide':
+                result = number1 / number2;
+                break;
+            default:
+                result = 'Operasi tidak dikenal';
+        }
+
+        document.getElementById('result').textContent = `Hasil: ${result}`;
+    </script>
+</body>
+</html>

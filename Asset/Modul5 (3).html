@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perpustakaan Halak Lubis</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <style>
+      /* CSS untuk styling gambar */
+      img {
+        width: 240px;
+        height: 300px;
+        border: 1px solid black;
+        padding: 3px;
+      }
+    </style>
+</head>
+
+<body>
+  <body>
+    <!-- navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Perpustakaan Halak Lubis</a>
+
+      <div class="navbar-nav">
+        <a href="index.html">Beranda</a>
+        
+        <div class="nav-item-with-dropdown">
+          <a href="#koleksi">Koleksi 
+            <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="Modul 1 No 2.html">Modul 1 (Audio)</a></li>
+            <li><a href="Modul 5 (2).html">peminjaman Koleksi (modul 5)</a></li>
+            <li><a href="modul5 (3).html">Daftar Koleksi (Modul 5)</a></li>
+            <li><a href="modul 6.html"> Opac (Modul 6)</a></li>
+          </ul>
+        </div>
+        
+        <div class="nav-item-with-dropdown">
+          <a href="#layanan">Layanan
+            <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="modul 2 No 1.html">Modul 2 (Keanggotaan)</a></li>
+            <li><a href="Modul 2 No 2.html">Modul 3 (Form masa pinjam)</a></li>
+            <li><a href="MODUL 1.html">Modul 4 (Daftar Perpustakaan)</a></li>
+            <li><a href="Modul 7.1.html">Modul 7 (Kalkulator)</a></li>
+            <li><a href="Modul 7.html">Modul 7 (Login)</a></li>
+          </ul>
+        </div>
+        
+        <div class="links">
+          <a href="#TentangKami">Tentang Kami</a>
+          <a href="#Kontak">Kontak</a>
+        </div>
+
+      <div class="navbar-extra">
+        <a href="Modul 6.html" id="search"><i data-feather="search"></i></a>
+        <a href="Modul5 (3).html" id="book"><i data-feather="book"></i></a>
+        <a href="#" id="menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- Hero Section Start -->
+    <section class="hero" id="Beranda">
+      <div class="main">
+        <div class="main_tag">
+          <h1>Daftar Koleksi <br /><span>Perpustakaan Halak Lubis</span></h1>
+
+          <p>
+            Berikut adalah beberapa koleksi yang dimiliki oleh Perpustakaan Halak Lubis, ada 5 Koleksi terkenal yang dimiliki dan dibawah ini 
+            merupakan Tampilan Cover buku tersebut
+          </p> 
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Pameran Buku Start -->
+    <section id="PameranBuku" class="PameranBuku">
+      <h2>Pameran Buku</h2>
+      <p>Selamat datang di website Perpustakaan Halak Lubis. Silahkan cari buku yang ingin Anda lihat!:</p>
+      <div id="book-gallery">
+        <img src="https://cdn.gramedia.com/uploads/items/9786020366517_Cantik-Itu-Luka-Hard-Cover---Limited-Edition.jpg" alt="Buku 1" onclick="showBookInfo('Buku 1', 'Pengarang: Eka Kurniawan<br>Bahasa: Inggris<br>Halaman: 3407 total<br>Deskripsi: Cantik Itu Luka adalah sebuah seri novel fantasi yang ditulis oleh penulis Kebangsaan Indonesia Eka Kurniawan. Buku ini memadukan unsur keluarga, romansa, dan politik, yang telah menembus berbagai negara hingga diterjemahkan ke lebih dari 34 bahasa. Menceritakan tentang kehidupan Dewi Ayu, karya sastra ini juga berhasil memenangkan World Readers Award pada tahun 2016.Kisah dalam buku ini diawali oleh seorang perempuan yang bangkit dari kuburannya setelah dua puluh satu tahun kematiannya. Kebangkitannya ini menguak kutukan dan tragedi keluarga yang menimpanya di akhir masa kolonial.Perpaduan yang epik, dari kisah kekasih yang lenyap ditelan kabut, hingga ada seorang ibu yang menginginkan bayi buruk rupa karena baginya kecantikan hanyalah sebuah luka..')" />
+        <img src="https://th.bing.com/th/id/OIP.40FIQUvmKRpPWXXMltt4FQHaLH?rs=1&pid=ImgDetMain.jpg" alt="Buku 2" onclick="showBookInfo('Buku 2', 'Pengarang: J.R.R. Tolkien<br>Terbitan Pertama: 29 Juli 1954<br>Halaman: 1216 <br>Deskripsi: The Lord of the Rings adalah novel kisah fantasi epik karangan J. R. R. Tolkien. Diterbitkan dalam tiga jilid pada tahun 1954 dan 1955, masing-masing jilid terdiri dari dua buku. Jilid pertama diberi judul Sembilan Pembawa Cincin, jilid kedua Dua Menara dan jilid ketiga Kembalinya Sang Raja.sit voluptatem accusantium doloremque laudantium.')" />
+        <img src="https://inc.mizanstore.com/aassets/img/com_cart/produk/_4121.jpg" alt="Buku 3" onclick="showBookInfo('Buku 3', 'Pengarang: Jane Austen<br>Terbitan Pertama: 28 Januari 1813<br>Deskripsi: Pride and Prejudice adalah sebuah novel karangan Jane Austen yang dipublikasikan pada 28 Januari 1813. Novel ini bercerita tentang kisah cinta kelas menengah-atas keluarga Inggris di akhir abad ke-19..')" />
+        <img src="https://s3-ap-southeast-1.amazonaws.com/ebook-previews/31752/100792/1.jpg" alt="Buku 4" onclick="showBookInfo('Buku 4', 'Pengarang:Dewi Lestari <br>Terbit Pertama: 2003<br>Halaman:564  <br>Deskripsi: Novel Perahu Kertas bertemakan persahabatan, percintaan, dan idealisme seseorang. Kisah ini berawal dengan seorang remaja laki-laki yang baru saja lulus dari Sekolah Menengah Akhir (SMA) bernama Keenan. Ia adalah laki-laki yang cerdas, mempunyai minat dan bakat dalam bidang seni melukis sangat kuat.')" />
+        <img src="https://cdn.gramedia.com/uploads/items/9786020332956_Bumi-New-Cover.jpg" alt="Buku 5" onclick="showBookInfo('Buku 5', 'Pengarang: Tere Liye<br>Terbitan Pertama: 2014<br>Halaman: 440<br>Deskripsi: Novel ini merupakan buku pertama dari serial Bumi atau Dunia Paralel dan diterbitkan pertama kali oleh Gramedia Pustaka Utama tahun 2014. Buku ini menceritakan tiga sahabat, Raib, Seli, dan Ali yang menemukan kekuatan baru dalam diri mereka yang membawa mereka ke dunia paralel.')"/>
+      </div>
+    </section>
+    <!-- Pameran Buku End -->
+
+    <!-- kontak kami start -->
+
+    <section id="Kontak" class="Kontak">
+      <h2>Kontak Kami</h2>
+      <p>
+        Email : hidayatulanwar123@gmai.com
+      </p>
+      <p>Whatsapp : 0895392476255</p>
+      <p>Instagram : @hii_dytlbs</p>
+
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.121372426695!2d98.65464837248531!3d3.559509750498249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3031304bd6005d07%3A0x8e0e5e2d03fa7983!2sUniversity%20of%20Sumatera%20Utara%20Library!5e0!3m2!1sen!2sid!4v1714321284971!5m2!1sen!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+        ></iframe>
+
+        <form action="">
+          <div class="input-group">
+            <i data-feather="user"></i>
+            <input type="text" placeholder="nama" />
+          </div>
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input type="text" placeholder="email" />
+          </div>
+          <div class="input-group">
+            <i data-feather="phone"></i>
+            <input type="text" placeholder="no hp" />
+          </div>
+          <button type="submit" class="btn">kirim pesan</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- kontak kami end -->
+
+    <!-- footer start -->
+    <footer>
+      <div class="sosials">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+      </div>
+
+      <div class="links">
+        <a href="#Beranda">Beranda</a>
+        <a href="#Koleksi ">Koleksi</a>
+        <a href="#layanan">Layanan</a>
+        <a href="#TentangKami">Tentang Kami</a>
+        <a href="#Kontak">Kontak</a>
+      </div>
+
+      <div class="credit">
+        <p>Created by ="H.A.L"</H></a>. | &copy; 2024.</p>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <footer></footer>
+    <!-- Feather Icon -->
+
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- My Javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Perpustakaan Al-ilmi</title>
+    <!-- Load jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Load DataTables plugin -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
+    <!-- Load Animate.css plugin -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom CSS -->
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:hover {
+            background-color: #ff0;
+        }
+
+        .highlight {
+            background-color: #fff;
+        }
+
+        body {
+            background-color: #f5f5dc;
+        }
+
+        h1, h3 {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        #library-table {
+            margin-bottom: 30px;
+        }
+
+        .Kontak {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .map {
+            width: 100%;
+            height: 300px;
+            margin-bottom: 20px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+
+        .input-group {
+            position: relative;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .input-group i {
+            position: absolute;
+            top: 12px;
+            left: 15px;
+        }
+
+        .input-group input {
+            width: calc(100% - 30px);
+            padding: 10px 15px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            padding-left: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            font-weight: 400;
+            color: #fff;
+            text-align: center;
+            vertical-align: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background-color: #007bff;
+            border: 1px solid transparent;
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            border-radius: .25rem;
+            transition: color .15s
+        }
+
+        .sosials {
+            margin-bottom: 30px;
+        }
+
+        .sosials a {
+            margin-right: 10px;
+            color: #fff;
+            background-color: #007bff;
+            border-color: #007bff;
+            text-align: center;
+            vertical-align: middle;
+            cursor: pointer;
+            border: 1px solid transparent;
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            border-radius: .25rem;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .links {
+            margin-bottom: 30px;
+        }
+
+        .links a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .credit {
+            color: #6c757d;
+        }
+
+        .credit a {
+            color: #6c757d;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<h1 style="text-align: center; color: #537188; background: white;">Perpustakaan Halak Lubis</h1>
+<h3 style="text-align: center; color: black;">Selamat datang di Perpustakaan Halak Lubis. Dibawah ini merupakan beberapa koleksi buku yang dimiliki oleh Perpustakaan Al-ilmi.<br> Ketik judul buku, Penulis, atau tahun terbit pada kolom Search untuk mempercepat pencarian!</h3>
+<table id="library-table">
+    <thead>
+    <tr>
+        <th>Judul Buku</th>
+        <th>Penulis</th>
+        <th>Tahun Terbit</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+				<td>Belajar HTML, CSS, dan JavaScript</td>
+					<td>Wahana Komputer</td>
+				<td>2021</td>
+			</tr>
+			<tr>
+				<td>PHP & MySQL: Novice to Ninja</td>
+				<td>Tom Butler dan Kevin Yank</td>
+				<td>2020</td>
+			</tr>
+			<tr>
+				<td>JavaScript and jQuery: Interactive Front-End Web Development</td>
+				<td>Jon Duckett</td>
+				<td>2014</td>
+			</tr>
+			<tr>
+				<td>Web Design with HTML, CSS, JavaScript and jQuery Set</td>
+				<td>Jon Duckett</td>
+				<td>2014</td>
+			</tr>
+			<tr>
+				<td>Node.js in Action</td>
+				<td>Mike Cantelon, Marc Harter, T.J. Holowaychuk, dan Nathan Rajlich</td>
+				<td>2014</td>
+			</tr>
+			<tr>
+				<td>The Handmaid's Tale</td>
+				<td>Margaret Atwood</td>
+				<td>1985</td>
+			</tr>
+			<tr>
+				<td>The Paris Library</td>
+				<td>Janet Skeslien Charles</td>
+				<td>2021</td>
+			</tr>
+			<tr>
+				<td>The Plot</td>
+				<td>Jean Hanff Korelitz</td>
+				<td>2021</td>
+			</tr>
+			<tr>
+				<td>The Code Breaker</td>
+				<td>Jennifer Doudna, Gene Editing, and the Future of the Human Race oleh Walter Isaacson </td>
+				<td>2021</td>
+			</tr>
+			<tr>
+				<td>This Book Is Overdue! : How Librarians and Cybrarians Can Save Us All!</td>
+				<td>Marilyn Johnson</td>
+				<td>2010</td>	
+			</tr>
+			<tr>
+				<td>The Bad-Ass Librarians of Timbuktu and Their Race to Save the World's Most Precious Manuscripts</td>
+				<td>MJoshua Hammer</td>
+				<td>2016</td>
+			</tr>
+			<tr>
+				<td>The Public Library</td>
+				<td>Robert Dawson</td>
+				<td>2014</td>
+			</tr>
+			<tr>
+				<td>The Book Thieves: The Nazi Looting of Europe's Libraries and the Race to Return a Literary Inheritance </td>
+				<td>Anders Rydell</td>
+				<td>2017</td>
+			</tr>
+			<tr>
+				<td>Secret of Divine Love</td>
+				<td>A. Helwa</td>
+				<td>2020</td>
+			</tr>
+			<tr>
+				<td>Filosofi Teras</td>
+				<td>Henry Manampiring</td>
+				<td>2018</td>
+			</tr>
+			<tr>
+				<td>Sebuah Seni Untuk Bersikap Bodo Amat</td>
+				<td>Mark Manson</td>
+				<td>2016</td>
+			</tr>
+			<tr>
+				<td>Bumi</td>
+				<td>Tere Liye</td>
+				<td>2015</td>
+			</tr>
+			<tr>
+				<td>Laskar Pelangi</td>
+				<td>Andrea Hirata</td>
+				<td>2005</td>
+			</tr>	
+		</tbody>
+	</table>
+	<!-- Custom jQuery -->
+<script>
+    $(document).ready(function () {
+        // Initialize DataTables plugin on library table
+        $("#library-table").DataTable({
+            paging: false,
+            searching: true,
+            ordering: true
+        });
+
+        // Highlight table row on mouseover
+        $("tr").mouseover(function () {
+            $(this).addClass("highlight");
+        });
+        $("tr").mouseout(function () {
+            $(this).removeClass("highlight");
+        });
+
+        // Add animation effect on table heading
+        $("th").addClass("animate__animated animate__bounce");
+    });
+</script>
+
+<!-- kontak kami start -->
+
+<section id="Kontak" class="Kontak">
+    <h2>Kontak Kami</h2>
+    <p>
+        Email : hidayatulanwar123@gmai.com
+    </p>
+    <p>Whatsapp : 0895392476255</p>
+    <p>Instagram : @hii_dytlbs</p>
+
+    <div class="row">
+        <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.121372426695!2d98.65464837248531!3d3.559509750498249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3031304bd6005d07%3A0x8e0e5e2d03fa7983!2sUniversity%20of%20Sumatera%20Utara%20Library!5e0!3m2!1sen!2sid!4v1714321284971!5m2!1sen!2sid"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="map"
+        ></iframe>
+
+        <form action="">
+            <div class="input-group">
+
+		  <i data-feather="user"></i>
+		  <input type="text" placeholder="nama" />
+		</div>
+		<div class="input-group">
+		  <i data-feather="mail"></i>
+		  <input type="text" placeholder="email" />
+		</div>
+		<div class="input-group">
+		  <i data-feather="phone"></i>
+		  <input type="text" placeholder="no hp" />
+		</div>
+		<button type="submit" class="btn">kirim pesan</button>
+	  </form>
+	</div>
+  </section>
+
+  <!-- kontak kami end -->
+
+  <!-- footer start -->
+  <footer>
+	<div class="sosials">
+	  <a href="#"><i data-feather="instagram"></i></a>
+	  <a href="#"><i data-feather="twitter"></i></a>
+	  <a href="#"><i data-feather="facebook"></i></a>
+	</div>
+
+	<div class="links">
+	  <a href="index.html">Beranda</a>
+	</div>
+
+	<div class="credit">
+	  <p>Created by ="H.A.L"</H></a>. | &copy; 2024.</p>
+	</div>
+  </footer>
+  <!-- footer end -->
+  <footer></footer>
+  <!-- Feather Icon -->
+
+  <script>
+	feather.replace();
+  </script>
+
+  <!-- My Javascript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
+
